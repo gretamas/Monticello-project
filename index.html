@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monticello</title>
     <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAh3Le2onZgAZ6ALulFL3TN2BozB116Ah0&loading=async&callback=initMap"
+      defer
+    ></script>
+    <script
       src="https://kit.fontawesome.com/5a481d3278.js"
       crossorigin="anonymous"
     ></script>
@@ -301,7 +306,8 @@
         >
       </section>
       <section class="map">
-        <img class="map__pin" src="./images/Pin.svg" alt="pin" />
+        <!--<img class="map__pin" src="./images/Pin.svg" alt="pin" /> -->
+        <div id="map"></div>
       </section>
       <section class="contacts">
         <h2>GET IN TOUCH</h2>

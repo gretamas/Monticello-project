@@ -390,7 +390,7 @@ $font-open-sans-regular: "OpenSansRegular", sans-serif;
 
       li {
         list-style: none;
-        margin: 0 40px;
+        margin: 0 20px;
         margin-top: 60px;
       }
 
@@ -405,11 +405,13 @@ $font-open-sans-regular: "OpenSansRegular", sans-serif;
         border-radius: 50%;
         width: 10px !important; //I am not able to overwrite 14px
         height: 10px;
+        display: block;
 
         #slick-slide-control01 {
           //Another try to overwrite 14px
           width: 10px !important;
           height: 10px;
+          display: block;
         }
       }
     }
@@ -455,7 +457,7 @@ $font-open-sans-regular: "OpenSansRegular", sans-serif;
 .map {
   height: 700px;
   position: relative;
-  background-image: url(../images/map.png);
+  /*background-image: url(../images/map.png);*/
   background-size: cover;
 
   .map__pin {
@@ -566,4 +568,8 @@ $font-open-sans-regular: "OpenSansRegular", sans-serif;
       column-gap: 20px;
     }
   }
+}
+
+#map {
+  height: 100%;
 }
