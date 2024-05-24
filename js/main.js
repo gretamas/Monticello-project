@@ -131,7 +131,7 @@ let map;
 
         const svgIcon = {
           url: 'data:image/svg+xml;charset=UTF-8,' + encodedSvg,
-          scaledSize: new google.maps.Size(106, 106), // Adjust the size as needed
+          scaledSize: new google.maps.Size(106, 106), 
         };
 
         new google.maps.Marker({
@@ -140,7 +140,57 @@ let map;
           icon: svgIcon,
           title: "A marker using a custom SVG image."
         });
+        
       }
 
+      initMap();
 
-initMap();
+
+const imagesBtn = document.querySelector(".gallery-section__see-more-btn");
+const gallerySectionWrapper =document.querySelector(".gallery-section__wrapper");
+const gallerySection =document.querySelector(".gallery-section");
+let moreImagesContainer;
+
+imagesBtn.addEventListener("click", (e) => {
+
+  gallerySection.classList.add("gallery-section--loaded-more");
+
+  if (imagesBtn.textContent === "SEE MORE") {
+  moreImagesContainer = document.createElement("div");
+  moreImagesContainer.classList.add("gallery-section__images--second-container")
+  const image1 = document.createElement("img");
+  image1.src = "./images/Image4.png";
+  const image2 = document.createElement("img");
+  image2.src = "./images/Image3.png";
+  const image3 = document.createElement("img");
+  image3.src = "./images/Image2.png";
+  const image4 = document.createElement("img");
+  image4.src = "./images/Image5.png";
+  const image5 = document.createElement("img");
+  image5.src = "./images/Image5.png";
+  const image6 = document.createElement("img");
+  image6.src = "./images/Image4.png";
+  const image7 = document.createElement("img");
+  image7.src = "./images/Image3.png";
+  const image8 = document.createElement("img");
+  image8.src = "./images/Image2.png";
+  moreImagesContainer.appendChild(image1);
+  moreImagesContainer.appendChild(image2);
+  moreImagesContainer.appendChild(image3);
+  moreImagesContainer.appendChild(image4);
+  moreImagesContainer.appendChild(image5);
+  moreImagesContainer.appendChild(image6);
+  moreImagesContainer.appendChild(image7);
+  moreImagesContainer.appendChild(image8);
+  gallerySectionWrapper.appendChild(moreImagesContainer);
+
+  imagesBtn.textContent= "SEE LESS";
+
+ }else{
+  moreImagesContainer.style.display = "none";
+  imagesBtn.textContent = "SEE MORE";
+}
+
+});
+
+

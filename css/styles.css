@@ -57,20 +57,20 @@
   justify-content: center;
   align-items: center;
 }
-.main-navigation .main-vavigation__pages-listItem {
+.main-navigation .main-navigation__pages-listItem {
   margin-left: 70px;
   color: white;
   font-family: "MontserratRegular", sans-serif;
   font-size: 0.8rem;
   line-height: 17.6px;
 }
-.main-navigation .main-vavigation__pages-listItem:hover {
+.main-navigation .main-navigation__pages-listItem:hover {
   transform: scale(1.2);
 }
-.main-navigation .main-vavigation__pages-listItem li {
+.main-navigation .main-navigation__pages-listItem li {
   position: relative;
 }
-.main-navigation .main-vavigation__pages-listItem li::before {
+.main-navigation .main-navigation__pages-listItem li::before {
   content: url(../images/Ellipse\ 2.png);
   position: absolute;
 }
@@ -394,15 +394,12 @@
   row-gap: 10px;
   -moz-column-gap: 10px;
        column-gap: 10px;
-  grid-template-areas: "a b c" "a d e";
   grid-template-columns: 580px 285px 285px;
-  grid-template-rows: 2fr;
+  grid-template-rows: 214px 214px;
+  margin-bottom: 10px;
 }
 .gallery-section .gallery-section__images-first {
-  grid-area: a;
-}
-.gallery-section .gallery-section__images-second {
-  grid-area: b;
+  grid-area: 1/1/3/1;
 }
 .gallery-section .gallery-section__see-more-btn {
   padding: 16px 41px;
@@ -414,6 +411,20 @@
 }
 .gallery-section .gallery-section__see-more-btn:hover {
   transform: scale(1.1);
+}
+
+.gallery-section--loaded-more {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.gallery-section__images--second-container {
+  display: grid;
+  row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  grid-template-columns: 285px 285px 285px 285px;
+  grid-template-rows: 214px 214px;
 }
 
 .map {
