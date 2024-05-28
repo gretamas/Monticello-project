@@ -190,7 +190,6 @@ imagesBtn.addEventListener("click", (e) => {
   moreImagesContainer.style.display = "none";
   imagesBtn.textContent = "SEE MORE";
 }
-
 });
 
 

@@ -13,9 +13,10 @@
       src="https://kit.fontawesome.com/5a481d3278.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./css/lightbox.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-
+    <script src="./js/lightbox-plus-jquery.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -275,36 +276,61 @@
       <section class="gallery-section">
         <h2>GALLERY</h2>
         <div class="gallery-section__wrapper">
-        <div class="gallery-section__images">
-          <img
-            class="gallery-section__images-first"
-            src="./images/Image1-2.png"
-            alt=""
-          />
-          <img
-            class="gallery-section__images-second"
-            src="./images/Image2.png"
-            alt="building"
-          />
-          <img
-            class="gallery-section__images-third"
-            src="./images/Image3.png"
-            alt="building"
-          />
-          <img
-            class="gallery-section__images-fourth"
-            src="./images/Image4.png"
-            alt="building"
-          />
-          <img
-            class="gallery-section__images-fifth"
-            src="./images/Image5.png"
-            alt="building"
-          />
+          <div class="gallery-section__images">
+            <a
+              href="./images/Image1-2.png"
+              data-lightbox="projects"
+              data-title="Caption1"
+            >
+              <img
+                class="gallery-section__images-first"
+                src="./images/Image1-2.png"
+                alt=""
+              />
+            </a>
+            <a
+              href="./images/Image2.png"
+              data-lightbox="projects"
+              data-title="Caption2"
+            >
+              <img
+                class="gallery-section__images-second"
+                src="./images/Image2.png"
+                alt="building"
+              />
+            </a>
+            <a
+              href="./images/Image3.png"
+              data-lightbox="projects"
+              data-title="Caption3"
+            >
+              <img
+                class="gallery-section__images-third"
+                src="./images/Image3.png"
+                alt="building"
+              />
+            </a>
+            <a
+              href="./images/Image4.png"
+              data-lightbox="projects"
+              data-title="Caption4"
+              class="gallery-section__images-fourth"
+            >
+              <img src="./images/Image4.png" alt="building" />
+            </a>
+            <a
+              href="./images/Image5.png"
+              data-lightbox="projects"
+              data-title="Caption5"
+              class="gallery-section__images-fifth"
+            >
+              <img src="./images/Image5.png" alt="building" />
+            </a>
+          </div>
         </div>
-      </div>
         <button class="gallery-section__see-more-btn">SEE MORE</button>
       </section>
+
       <section class="map">
         <!--<img class="map__pin" src="./images/Pin.svg" alt="pin" /> -->
         <div id="map"></div>
